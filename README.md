@@ -7,3 +7,12 @@ Made by Josh and Jayden
 Getting started
 
 ~~HELLO~~
+
+## Backend Startup:
+1: CD WEC_DASH/Backend
+```bash
+    cd WEC_Dash/Backend
+```
+
+2: Run CMDS: 
+- 'python server.py' 
