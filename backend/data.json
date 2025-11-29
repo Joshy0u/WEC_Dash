@@ -1,0 +1,103 @@
+{
+    "LDXFile": {
+        "@Version": "1.5",
+        "Layers": {
+            "Layer": {
+                "MarkerBlock": {
+                    "MarkerGroup": {
+                        "@Name": "Beacons",
+                        "@Index": "3",
+                        "Marker": [
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.1",
+                                "@Flags": "77",
+                                "@Time": "95758000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.2",
+                                "@Flags": "77",
+                                "@Time": "199731000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.3",
+                                "@Flags": "77",
+                                "@Time": "288645000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.4",
+                                "@Flags": "77",
+                                "@Time": "378811000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.5",
+                                "@Flags": "77",
+                                "@Time": "466611000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.6",
+                                "@Flags": "77",
+                                "@Time": "554760000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.7",
+                                "@Flags": "77",
+                                "@Time": "655226000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.8",
+                                "@Flags": "77",
+                                "@Time": "745445000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.9",
+                                "@Flags": "77",
+                                "@Time": "838140000.000000"
+                            },
+                            {
+                                "@Version": "100",
+                                "@ClassName": "BCN",
+                                "@Name": "Manual.10",
+                                "@Flags": "77",
+                                "@Time": "927354000.000000"
+                            }
+                        ]
+                    }
+                }
+            },
+            "Details": {
+                "String": [
+                    {
+                        "@Id": "Fastest Time",
+                        "@Value": "1:27.800"
+                    },
+                    {
+                        "@Id": "Fastest Lap",
+                        "@Value": "4"
+                    },
+                    {
+                        "@Id": "Total Laps",
+                        "@Value": "11"
+                    }
+                ]
+            }
+        }
+    }
+}
