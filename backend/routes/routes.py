@@ -1,5 +1,5 @@
 from flask import jsonify, Blueprint
-from backend.fileParser import load_parsed_data
+from fileParser import load_parsed_data
 
 routes_bp = Blueprint('routes', __name__)
 
