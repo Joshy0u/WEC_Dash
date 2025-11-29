@@ -40,10 +40,8 @@ def trim_xml_dict(xml_dict):
         "lap_data": lap_data
     }
 
-
-with open(os.path.dirname(__file__) + '/XMLTestData/data.xml') as xml_file:
-    data_dict = xmltodict.parse(xml_file.read())
-parsed_data = trim_xml_dict(data_dict)
-pprint(parsed_data)
-print("done without errors?")
+def load_parsed_data():
+    with open(os.path.dirname(__file__) + '/XMLTestData/data.xml') as xml_file:
+        data_dict = xmltodict.parse(xml_file.read())
+    return trim_xml_dict(data_dict)
 

@@ -1,4 +1,5 @@
 from flask import jsonify, Blueprint
+from backend.fileParser import load_parsed_data
 
 routes_bp = Blueprint('routes', __name__)
 
@@ -19,3 +20,8 @@ def data():
         "features":["NONE!", "LITERALLY", "NOTHING", "HERE"]
     }
     return jsonify(sample_data)
+
+@routes_bp.route('/parsed-data')
+def parsed_data():
+    data = load_parsed_data()
+    return jsonify(data)
