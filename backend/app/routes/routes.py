@@ -2,8 +2,8 @@ from flask import jsonify, Blueprint
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
-from DataHandlers.fileParser import load_parsed_data
+from fileParser import load_parsed_data
+from fileParser import load_parsed_data
 
 routes_bp = Blueprint('routes', __name__)
 

@@ -1,4 +1,4 @@
 dotenv
 flask
 flask-cors
-xmltodict
+pydantic
