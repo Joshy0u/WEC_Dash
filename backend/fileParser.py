@@ -3,11 +3,17 @@ import os
 import xmltodict
 import json
 
+def lapstring_to_seconds(s):
+    # s example: "1:27.800"
+    minutes, rest = s.split(":")
+    return int(minutes) * 60 + float(rest)
+
+
 def micros_to_laptime(micros):
     total_seconds = float(micros)/1_000_000
     minutes = int(total_seconds // 60)
     seconds = total_seconds % 60
-    return f"{minutes}:{seconds:06.3f}" #MM:SS.mmm racing lap format
+    return float(micros) / 1_000_000 #MM:SS.mmm racing lap format
 
 def trim_xml_dict(xml_dict):
 
@@ -18,6 +24,13 @@ def trim_xml_dict(xml_dict):
         item["@Id"]: item["@Value"]
         for item in details
     }
+
+    if "Fastest Lap" in session_info:
+        session_info["Fastest Lap"] = int(session_info["Fastest Lap"])
+    if "Total Laps" in session_info:
+        session_info["Total Laps"] = int(session_info["Total Laps"])
+    if "Fastest Time" in session_info:
+        session_info["Fastest Time"] = lapstring_to_seconds(session_info["Fastest Time"])
     
     layer_list = layers["Layer"]["MarkerBlock"]["MarkerGroup"]["Marker"]
     layer_list_sorted = sorted(

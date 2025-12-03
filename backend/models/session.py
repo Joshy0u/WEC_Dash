@@ -26,5 +26,12 @@ m = SessionModel(
     fastest_lap_time= 83.456, 
     total_laps=10
 )
-pprint(m.model_dump())
+pprint(m.model_dump()) #this works
 # i need to test with the actual dictionary from the parser
+
+n = SessionModel(
+    fastest_lap_count=data['session_info']['Fastest Lap'],
+    fastest_lap_time=data['session_info']['Fastest Time'], #i knew this was going to cause a problem
+    total_laps=data['session_info']['Total Laps']
+)
+pprint(n.model_dump())

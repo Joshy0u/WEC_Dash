@@ -16,3 +16,5 @@ if __name__ =='__main__':
 # just run via python backend/server.py
 
 
+# NOTE: FIX JSON ROUTING PRINTING FORMAT, WE CONVERTED TO INT
+# BUT ITS STILL PRINTING AS STRING IN THE JSON OUTPUT
