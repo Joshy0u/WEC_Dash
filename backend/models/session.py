@@ -19,7 +19,7 @@ class SessionModel(BaseModel):
         return self
     
 data = load_parsed_data()
-pprint(data)
+#pprint(data)
 #ok note i need to convert from MM:SS.mmm to float seconds
 m = SessionModel(
     fastest_lap_count=5,
