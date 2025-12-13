@@ -18,7 +18,7 @@ def trim_xml_dict(xml_dict):
         item["@Id"]: item["@Value"]
         for item in details
     }
-    
+    #---------------------------------------------
     layer_list = layers["Layer"]["MarkerBlock"]["MarkerGroup"]["Marker"]
     layer_list_sorted = sorted(
         layer_list, 
@@ -44,4 +44,3 @@ def load_parsed_data():
     with open(os.path.dirname(__file__) + '/XMLTestData/data.xml') as xml_file:
         data_dict = xmltodict.parse(xml_file.read())
     return trim_xml_dict(data_dict)
-

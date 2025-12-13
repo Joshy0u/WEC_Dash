@@ -1,5 +1,7 @@
 from flask import jsonify, Blueprint
-from fileParser import load_parsed_data
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from fileParser import load_parsed_data # key step 
 
 routes_bp = Blueprint('routes', __name__)
 
@@ -23,5 +25,6 @@ def data():
 
 @routes_bp.route('/parsed-data')
 def parsed_data():
-    data = load_parsed_data()
+    data = load_parsed_data()#key step
+    
     return jsonify(data)
