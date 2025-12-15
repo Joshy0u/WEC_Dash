@@ -27,5 +27,6 @@ def data():
 
 @routes_bp.route('/parsed-data')
 def parsed_data():
-    data = load_parsed_data()
+    data = load_parsed_data()#key step
+    
     return jsonify(data)

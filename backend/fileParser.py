@@ -57,4 +57,3 @@ def load_parsed_data():
     with open(os.path.dirname(__file__) + '/XMLTestData/data.xml') as xml_file:
         data_dict = xmltodict.parse(xml_file.read())
     return trim_xml_dict(data_dict)
-
