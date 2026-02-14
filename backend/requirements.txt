@@ -2,3 +2,4 @@ dotenv
 flask
 flask-cors
 pydantic
+-r ../LD_Parsing/ldparser/requirements.txt
